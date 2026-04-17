@@ -16,7 +16,6 @@
   transition: all 0.3s ease;
   z-index: 50;
 }
-
 .header.scrolled {
   background: rgba(var(--dark-blue-color), 0.8);
   backdrop-filter: blur(10px);
@@ -26,10 +25,32 @@
   padding: 0.75rem 2rem;
 }
 
-.logo {
+.header-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.header-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.header-title {
   font-size: 1.5rem;
   font-weight: bold;
   color: var(--color-text-on-dark);
+}
+.header-logo {
+  height: 30px;
+  width: auto;
 }
 
 .nav-links {
@@ -38,14 +59,23 @@
 }
 
 .cta {
-  padding: 0.5rem 1rem;
-  background: var(--blue-color);
-  color: white;
-  border: none;
+  padding: 0.3rem 1rem;
   border-radius: 2rem;
-  transition: background-color 0.3s;
 }
 
-.cta:hover {
+.cta.contact-us {
+  background: transparent;
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+.cta.apply-now {
+  background: var(--white-color);
+  color: var(--dark-blue-color);
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+.cta.contact-us:hover, .cta.apply-now:hover {
   background: var(--dark-blue-color);
+  color: var(--white-color);
+  border-color: var(--dark-blue-color);
 }
