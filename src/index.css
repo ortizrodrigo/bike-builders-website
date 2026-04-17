@@ -6,6 +6,8 @@
   --white-color: #ffffff;
   --background-gradient: linear-gradient(to right, var(--dark-blue-color), var(--blue-color));
 
+  --header-height: 64px;
+
   --color-text-on-light: var(--black-color);
   --color-header-on-light: var(--dark-blue-color);
   --color-text-on-dark: var(--white-color);
@@ -56,4 +58,29 @@ h4,
 h5,
 h6 {
   font-family: "Cal Sans", sans-serif;
+}
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font: inherit;
 }
