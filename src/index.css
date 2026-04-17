@@ -1,8 +1,8 @@
 :root {
   --black-color: #232428;
-  --blue-color:#3c19ff;
+  --blue-color: #3c19ff;
   --dark-blue-color: #091c78;
-  --purple-color: #E5E0FF;
+  --purple-color: #e5e0ff;
   --white-color: #ffffff;
   --background-gradient: linear-gradient(to right, var(--dark-blue-color), var(--blue-color));
 
@@ -47,4 +47,13 @@ body {
 
   /* Prevent weird horizontal scroll issues */
   overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cal Sans", sans-serif;
 }
