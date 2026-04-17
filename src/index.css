@@ -85,3 +85,8 @@ button {
   cursor: pointer;
   font: inherit;
 }
+
+.column {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,3 +1,7 @@
+footer {
+  background-color: var(--accent);
+}
+
 .carousel {
   overflow: hidden;
   width: 100%;
@@ -51,4 +55,33 @@
   to {
     transform: translateX(-50%);
   }
+}
+
+
+.footer-links {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5rem;
+  gap: 3rem;
+  width: 100%;
+  font-family: "Cal Sans";
+  font-weight: bold;
+}
+
+.footer-link {
+  transition: color 0.3s ease;
+}
+.footer-link:hover {
+  color: var(--gold-color);
+}
+
+.footer-brand {
+  display: flex;
+  font-family: "Cal Sans";
+  font-weight: bold;
+  padding: 2rem;
+  gap: 1rem;
+}
+.footer-name {
+  line-height: 1;
 }
