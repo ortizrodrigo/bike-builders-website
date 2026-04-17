@@ -21,7 +21,7 @@ function Header() {
       <div className="header-left">
         <NavLink to="/" className="logo-link">
           <img src={logo} alt="header-logo" className="header-logo" />
-          <span className="header-title">Bike Builders of Berkeley</span>
+          <h1 className="header-title">Bike Builders of Berkeley</h1>
         </NavLink>
 
         <nav className="nav-links">

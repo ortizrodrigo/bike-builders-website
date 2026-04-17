@@ -1,0 +1,11 @@
+.nav-item {
+  color: var(--color-text-on-dark);
+  transition: transform 0.3s ease;
+}
+.nav-item:hover {
+  transform: translateY(-2px);
+}
+
+.nav-item-active {
+  color: var(--gold-color);
+}

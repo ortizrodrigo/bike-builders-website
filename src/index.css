@@ -4,6 +4,7 @@
   --dark-blue-color: #091c78;
   --purple-color: #e5e0ff;
   --white-color: #ffffff;
+  --gold-color: #ffd700;
   --background-gradient: linear-gradient(to right, var(--dark-blue-color), var(--blue-color));
 
   --header-height: 64px;
