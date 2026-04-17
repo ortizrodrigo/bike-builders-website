@@ -1,0 +1,54 @@
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  padding: 32px 0;
+}
+
+.carousel-track {
+  display: flex;
+  width: max-content;
+  animation: ticker 20s linear infinite;
+}
+
+.carousel-text {
+  display: flex;
+  white-space: nowrap;
+  font-size: 64px;
+  font-family: "Cal Sans";
+  color: var(--white-color);
+  line-height: 1;
+}
+
+/* spacing between items */
+.carousel-text span {
+  position: relative;
+  margin-right: 60px;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* separator dot */
+.carousel-text span::after {
+  content: "";
+  position: absolute;
+
+  top: 50%;
+  transform: translateY(-50%);
+
+  right: -38px;
+
+  width: 16px;
+  height: 16px;
+  background: var(--white-color);
+  border-radius: 50%;
+}
+
+/* infinite scroll */
+@keyframes ticker {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
