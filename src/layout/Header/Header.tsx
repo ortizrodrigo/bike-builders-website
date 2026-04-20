@@ -32,8 +32,12 @@ function Header() {
         </nav>
       </div>
       <div className="header-right">
-        <button className="cta contact-us">Contact Us</button>
-        <button className="cta apply-now">Apply Now</button>
+        <NavLink to="/contact" className="cta contact-us">
+          Contact Us
+        </NavLink>
+        <NavLink to="/apply" className="cta apply-now">
+          Apply Now
+        </NavLink>
       </div>
     </header>
   );

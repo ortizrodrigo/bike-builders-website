@@ -30,8 +30,8 @@ function Footer() {
         </div>
         <div className="column">
           <Link to="/sponsors" className="footer-link">Sponsors</Link>
-          <Link to="" className="footer-link">Contact Us</Link>
-          <Link to="" className="footer-link">Apply Now</Link>
+          <Link to="/contact" className="footer-link">Contact Us</Link>
+          <Link to="/apply" className="footer-link">Apply Now</Link>
         </div>
         <div className="column">
           <Link to="" className="footer-link">LinkedIn ↗</Link>
