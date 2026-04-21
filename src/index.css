@@ -60,6 +60,24 @@ h6 {
   font-family: "Cal Sans", sans-serif;
 }
 
+h2 {
+  font-size: 3rem;
+}
+@media (max-width: 479px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
 input,
 textarea,
 button,

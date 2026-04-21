@@ -36,6 +36,11 @@ main {
   border-color: var(--dark-blue-color);
 }
 
+.white-section {
+  background: var(--white-color);
+  color: var(--color-text-on-light);
+}
+
 /* default: hidden */
 .u-show-xs,
 .u-show-sm,
