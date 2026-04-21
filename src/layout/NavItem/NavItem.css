@@ -1,6 +1,7 @@
 .nav-item {
   color: var(--color-text-on-dark);
   transition: transform 0.3s ease;
+  white-space: nowrap;
 }
 .nav-item:hover {
   transform: translateY(-2px);
