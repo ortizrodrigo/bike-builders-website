@@ -4,7 +4,18 @@ import logo from "@/assets/logo.svg";
 
 function AboutPage() {
   return (
-    <>
+    <div className="about-page">
+      <svg className="bike-path" viewBox="0 0 500 200">
+        <path
+          d="M 0 150 
+       C 150 260, 250 -20, 500 50"
+          fill="none"
+          stroke="white"
+          strokeWidth="4"
+          strokeDasharray="8 8"
+          strokeLinecap="round"
+        />
+      </svg>
       <section className="hero">
         <div className="hero-left">
           <h1 className="hero-title">
@@ -25,18 +36,7 @@ function AboutPage() {
           <img src={logo} alt="hero-logo" className="hero-logo" />
         </div>
       </section>
-      <svg className="bike-path" viewBox="0 0 500 200">
-        <path
-          d="M 0 150 
-       C 150 260, 250 -20, 500 100"
-          fill="none"
-          stroke="white"
-          strokeWidth="4"
-          strokeDasharray="8 8"
-          strokeLinecap="round"
-        />
-      </svg>
-    </>
+    </div>
   );
 }
 

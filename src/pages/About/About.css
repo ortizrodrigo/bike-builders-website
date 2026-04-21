@@ -1,8 +1,30 @@
+.about-page {
+  position: relative;
+  overflow: hidden;
+}
+
 .hero {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: calc(100vh - var(--header-height));
+}
+
+.bike-path {
+  position: absolute;
+  top: 50vh;
+  left: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+.bike-path path {
+  animation: dashMove 2s linear infinite;
+}
+
+@keyframes dashMove {
+  to {
+    stroke-dashoffset: 16;
+  }
 }
 
 .hero-title {
@@ -26,8 +48,6 @@
   height: auto;
 }
 
-
-
 @media (max-width: 1023px) {
   .hero {
     flex-direction: column;
@@ -48,5 +68,9 @@
 
   .hero-logo {
     width: 180px;
+  }
+
+  .bike-path {
+    display: none;
   }
 }
