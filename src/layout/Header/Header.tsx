@@ -25,19 +25,15 @@ function Header() {
           <h1 className="header-title">Bike Builders of Berkeley</h1>
         </NavLink>
 
-        <button className="burger" onClick={() => setMenuOpen(!menuOpen)}>
-          ☰
-        </button>
-
         <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
           <NavItem to="/about" label="About Us" />
           <NavItem to="/projects" label="Projects" />
           <NavItem to="/members" label="Members" />
           <NavItem to="/sponsors" label="Sponsors" />
-          <div className="md-screen-only">
+          <div className="u-show-xs u-show-sm u-show-md">
             <NavItem to="/contact" label="Contact Us" />
           </div>
-          <div className="md-screen-only">
+          <div className="u-show-xs u-show-sm u-show-md">
             <NavItem to="/apply" label="Apply Now" />
           </div>
         </nav>
@@ -50,6 +46,9 @@ function Header() {
           Apply Now
         </NavLink>
       </div>
+      <button className="burger" onClick={() => setMenuOpen(!menuOpen)}>
+        ☰
+      </button>
     </header>
   );
 }
