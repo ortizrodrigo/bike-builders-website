@@ -49,6 +49,11 @@
   color: var(--color-text-on-dark);
   white-space: nowrap;
 }
+@media (max-width: 479px) {
+  .header-title {
+    font-size: 1rem;
+  }
+}
 .header-logo {
   height: 30px;
   width: auto;
@@ -119,7 +124,9 @@
     overflow: hidden;
     padding: 0 2rem;
     gap: 1rem;
-    transition: max-height 0.3s ease, padding 0.3s ease;
+    transition:
+      max-height 0.3s ease,
+      padding 0.3s ease;
   }
 
   .nav-links.open {
@@ -131,6 +138,4 @@
   .header-right {
     display: none;
   }
-
-
 }
