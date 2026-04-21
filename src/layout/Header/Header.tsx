@@ -8,6 +8,9 @@ function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const closeMenu = () => setMenuOpen(false);
+  const toggleMenu = () => setMenuOpen(prev => !prev);
+
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
@@ -26,15 +29,15 @@ function Header() {
         </NavLink>
 
         <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
-          <NavItem to="/about" label="About Us" />
-          <NavItem to="/projects" label="Projects" />
-          <NavItem to="/members" label="Members" />
-          <NavItem to="/sponsors" label="Sponsors" />
+          <NavItem to="/about" label="About Us" onClick={closeMenu} />
+          <NavItem to="/projects" label="Projects" onClick={closeMenu} />
+          <NavItem to="/members" label="Members" onClick={closeMenu} />
+          <NavItem to="/sponsors" label="Sponsors" onClick={closeMenu} />
           <div className="u-show-xs u-show-sm u-show-md">
-            <NavItem to="/contact" label="Contact Us" />
+            <NavItem to="/contact" label="Contact Us" onClick={closeMenu} />
           </div>
           <div className="u-show-xs u-show-sm u-show-md">
-            <NavItem to="/apply" label="Apply Now" />
+            <NavItem to="/apply" label="Apply Now" onClick={closeMenu} />
           </div>
         </nav>
       </div>
@@ -46,7 +49,7 @@ function Header() {
           Apply Now
         </NavLink>
       </div>
-      <button className="burger" onClick={() => setMenuOpen(!menuOpen)}>
+      <button className="burger" onClick={toggleMenu}>
         ☰
       </button>
     </header>
