@@ -1,6 +1,8 @@
 import "@/pages/About/About.css";
 import { Link } from "react-router";
 import logo from "@/assets/logo.svg";
+import dbl_left from "@/assets/about/dbl-left.jpg";
+import dbl_right from "@/assets/about/dbl-right.jpg";
 
 function AboutPage() {
   return (
@@ -16,7 +18,7 @@ function AboutPage() {
           strokeLinecap="round"
         />
       </svg>
-      <section className="hero">
+      <section className="hero-section">
         <div className="hero-left">
           <h1 className="hero-title">
             Bike <br />
@@ -34,6 +36,17 @@ function AboutPage() {
         </div>
         <div className="hero-right">
           <img src={logo} alt="hero-logo" className="hero-logo" />
+        </div>
+      </section>
+      <section className="dbl-section">
+        <h1 className="dbl-title">Design, Build, Learn</h1>
+        <p className="dbl-description">
+          We design, build, and test all things bikes with a focus on creating frames from scratch.
+          Lorem ipsum dolor sit amet consectetur.
+        </p>
+        <div className="dbl-images">
+          <img src={dbl_left} alt="" className="dbl-image" />
+          <img src={dbl_right} alt="" className="dbl-image" />
         </div>
       </section>
     </div>

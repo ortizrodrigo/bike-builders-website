@@ -1,9 +1,11 @@
 .about-page {
   position: relative;
   overflow: hidden;
+  z-index: 0;
 }
 
-.hero {
+/* Hero */
+.hero-section {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -14,8 +16,9 @@
   position: absolute;
   top: 50vh;
   left: 0;
-  z-index: 0;
+  z-index: -1;
   pointer-events: none;
+  opacity: 0.6;
 }
 .bike-path path {
   animation: dashMove 2s linear infinite;
@@ -49,7 +52,7 @@
 }
 
 @media (max-width: 1023px) {
-  .hero {
+  .hero-section {
     flex-direction: column;
     justify-content: center;
     height: auto;
@@ -72,5 +75,38 @@
 
   .bike-path {
     display: none;
+  }
+}
+
+/* Design, Build, Learn */
+.dbl-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20vh;
+  padding: 2rem;
+}
+
+.dbl-images {
+  display: flex;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.dbl-image {
+  width: 100%;
+  max-width: 360px;
+  aspect-ratio: 18 / 12;
+  object-fit: cover;
+}
+
+@media (max-width: 1023px) {
+  .dbl-section {
+    margin-top: 0;
+  }
+
+  .dbl-images {
+    flex-direction: column;
   }
 }
