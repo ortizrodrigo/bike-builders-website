@@ -69,15 +69,67 @@
   background: transparent;
   color: var(--white-color);
   border: 1px solid var(--white-color);
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  transition:
+    background-color 0.3s,
+    color 0.3s,
+    border-color 0.3s;
 }
 .cta.apply-now {
   background: var(--white-color);
   color: var(--dark-blue-color);
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  transition:
+    background-color 0.3s,
+    color 0.3s,
+    border-color 0.3s;
 }
-.cta.contact-us:hover, .cta.apply-now:hover {
+.cta.contact-us:hover,
+.cta.apply-now:hover {
   background: var(--dark-blue-color);
   color: var(--white-color);
   border-color: var(--dark-blue-color);
+}
+
+.burger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* md: 0-1023px */
+@media (max-width: 1023px) {
+  .burger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    flex-direction: column;
+    background: rgba(var(--dark-blue-color), 0.95);
+    backdrop-filter: blur(10px);
+
+    max-height: 0; /* hide nav links */
+
+    overflow: hidden;
+    padding: 0 2rem;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+  }
+
+  .nav-links.open {
+    max-height: 500px; /* reveal nav links */
+    padding: 1rem 2rem;
+  }
+
+  /* hide right-side buttons */
+  .header-right {
+    display: none;
+  }
+
+
 }

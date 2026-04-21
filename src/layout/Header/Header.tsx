@@ -6,6 +6,7 @@ import { NavLink } from "react-router";
 
 function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,14 +25,24 @@ function Header() {
           <h1 className="header-title">Bike Builders of Berkeley</h1>
         </NavLink>
 
-        <nav className="nav-links">
+        <button className="burger" onClick={() => setMenuOpen(!menuOpen)}>
+          ☰
+        </button>
+
+        <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
           <NavItem to="/about" label="About Us" />
           <NavItem to="/projects" label="Projects" />
           <NavItem to="/members" label="Members" />
           <NavItem to="/sponsors" label="Sponsors" />
+          <div className="md-screen-only">
+            <NavItem to="/contact" label="Contact Us" />
+          </div>
+          <div className="md-screen-only">
+            <NavItem to="/apply" label="Apply Now" />
+          </div>
         </nav>
       </div>
-      <div className="header-right">
+      <div className={`header-right ${menuOpen ? "open" : ""}`}>
         <NavLink to="/contact" className="cta contact-us">
           Contact Us
         </NavLink>

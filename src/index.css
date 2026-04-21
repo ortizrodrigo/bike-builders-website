@@ -89,3 +89,39 @@ button {
   display: flex;
   flex-direction: column;
 }
+
+/* default: hidden */
+.xs-screen-only,
+.sm-screen-only,
+.md-screen-only,
+.lg-screen-only {
+  display: none;
+}
+
+/* xs: 0-479px */
+@media (max-width: 479px) {
+  .xs-screen-only {
+    display: block;
+  }
+}
+
+/* sm: 0-767px */
+@media (max-width: 767px) {
+  .sm-screen-only {
+    display: block;
+  }
+}
+
+/* md: 0-1023px */
+@media (max-width: 1023px) {
+  .md-screen-only {
+    display: block;
+  }
+}
+
+/* lg: 0-1439px */
+@media (max-width: 1439px) {
+  .lg-screen-only {
+    display: block;
+  }
+}
