@@ -9,7 +9,7 @@ function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const closeMenu = () => setMenuOpen(false);
-  const toggleMenu = () => setMenuOpen(prev => !prev);
+  const toggleMenu = () => setMenuOpen((prev) => !prev);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,9 +21,9 @@ function Header() {
   }, []);
 
   return (
-    <header className={scrolled ? "header scrolled" : "header"}>
+    <header className={scrolled ? "scrolled" : ""}>
       <div className="header-left">
-        <NavLink to="/" className="logo-link">
+        <NavLink to="/" className="logo-link" onClick={closeMenu}>
           <img src={logo} alt="header-logo" className="header-logo" />
           <h1 className="header-title">Bike Builders of Berkeley</h1>
         </NavLink>
@@ -33,12 +33,18 @@ function Header() {
           <NavItem to="/projects" label="Projects" onClick={closeMenu} />
           <NavItem to="/members" label="Members" onClick={closeMenu} />
           <NavItem to="/sponsors" label="Sponsors" onClick={closeMenu} />
-          <div className="u-show-xs u-show-sm u-show-md">
-            <NavItem to="/contact" label="Contact Us" onClick={closeMenu} />
-          </div>
-          <div className="u-show-xs u-show-sm u-show-md">
-            <NavItem to="/apply" label="Apply Now" onClick={closeMenu} />
-          </div>
+          <NavItem
+            to="/contact"
+            label="Contact Us"
+            onClick={closeMenu}
+            className="u-show-xs u-show-sm u-show-md"
+          />
+          <NavItem
+            to="/apply"
+            label="Apply Now"
+            onClick={closeMenu}
+            className="u-show-xs u-show-sm u-show-md"
+          />
         </nav>
       </div>
       <div className={`header-right ${menuOpen ? "open" : ""}`}>

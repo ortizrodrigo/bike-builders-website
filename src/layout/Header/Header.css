@@ -1,4 +1,4 @@
-.header {
+header {
   position: fixed;
   top: 0;
   left: 0;
@@ -16,8 +16,8 @@
   transition: all 0.3s ease;
   z-index: 50;
 }
-.header.scrolled {
-  background: rgba(var(--dark-blue-color), 0.8);
+header.scrolled {
+  background: linear-gradient(to right, var(--dark-blue-color), var(--blue-color));
   backdrop-filter: blur(10px);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 
@@ -71,6 +71,7 @@
   border: none;
   color: white;
   cursor: pointer;
+  transform: translateY(-4px);
 }
 
 /* md: 0-1023px */
@@ -86,22 +87,26 @@
     right: 0;
 
     flex-direction: column;
-    background: rgba(var(--dark-blue-color), 0.95);
+    background: linear-gradient(to right, var(--dark-blue-color), var(--blue-color));
     backdrop-filter: blur(10px);
 
     max-height: 0; /* hide nav links */
 
     overflow: hidden;
-    padding: 0 2rem;
-    gap: 1rem;
+    gap: 0rem;
     transition:
       max-height 0.3s ease,
       padding 0.3s ease;
   }
-
   .nav-links.open {
     max-height: 500px; /* reveal nav links */
-    padding: 1rem 2rem;
+    align-items: center;
+    border-top: 1px solid var(--white-color);
+    transition: max-height 0.3s ease, border 0.3s ease;
+  }
+  .nav-links.open * {
+    padding: 0.25rem 0;
+    border-bottom: 1px solid var(--white-color);
   }
 
   /* hide right-side buttons */
