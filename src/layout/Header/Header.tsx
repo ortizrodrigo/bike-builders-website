@@ -42,10 +42,10 @@ function Header() {
         </nav>
       </div>
       <div className={`header-right ${menuOpen ? "open" : ""}`}>
-        <NavLink to="/contact" className="cta contact-us">
+        <NavLink to="/contact" className="blank-button">
           Contact Us
         </NavLink>
-        <NavLink to="/apply" className="cta apply-now">
+        <NavLink to="/apply" className="white-button">
           Apply Now
         </NavLink>
       </div>

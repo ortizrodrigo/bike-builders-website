@@ -64,36 +64,6 @@
   gap: 2rem;
 }
 
-.cta {
-  padding: 0.3rem 1rem;
-  border-radius: 2rem;
-  white-space: nowrap;
-}
-
-.cta.contact-us {
-  background: transparent;
-  color: var(--white-color);
-  border: 1px solid var(--white-color);
-  transition:
-    background-color 0.3s,
-    color 0.3s,
-    border-color 0.3s;
-}
-.cta.apply-now {
-  background: var(--white-color);
-  color: var(--dark-blue-color);
-  transition:
-    background-color 0.3s,
-    color 0.3s,
-    border-color 0.3s;
-}
-.cta.contact-us:hover,
-.cta.apply-now:hover {
-  background: var(--dark-blue-color);
-  color: var(--white-color);
-  border-color: var(--dark-blue-color);
-}
-
 .burger {
   display: none;
   font-size: 2rem;
