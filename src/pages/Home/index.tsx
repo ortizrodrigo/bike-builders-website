@@ -65,12 +65,31 @@ function HomePage() {
               elit. Exercitationem ipsa consequatur velit libero commodi doloremque!
             </p>
             <p className="wwa-description">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae corporis nemo, nam repudiandae cum dolores.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae corporis nemo, nam
+              repudiandae cum dolores.
             </p>
           </div>
           <div className="wwa-right">
             <img src={placeholder} alt="bike builders who we are video" className="wwa-image" />
           </div>
+        </div>
+      </section>
+      {/* Member Spotlight */}
+      <section className="ms-section white-section">
+        <h3 className="ms-title">Member Spotlight</h3>
+        <div className="ms-member-carousel">TODO</div>
+        <p className="ms-description">
+          We are a team of undergraduate students at UC Berkeley. Everyone plays in integral role in
+          building a bike, from organizing the business side of things to making custom components.
+          Our community is open to everyone!
+        </p>
+        <div className="ms-links">
+          <Link className="blue-button" to={"/apply"}>
+            Join Us
+          </Link>
+          <Link className="purple-button" to={"/contact"}>
+            Learn More
+          </Link>
         </div>
       </section>
     </div>

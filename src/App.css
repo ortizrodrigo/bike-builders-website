@@ -11,7 +11,9 @@ main {
 }
 
 .blank-button,
-.white-button {
+.white-button,
+.blue-button,
+.purple-button {
   padding: 0.3rem 1rem;
   border-radius: 2rem;
   white-space: nowrap;
@@ -29,8 +31,21 @@ main {
   background: var(--white-color);
   color: var(--dark-blue-color);
 }
+.blue-button {
+  background: var(--accent);
+  color: var(--white-color);
+}
+.purple-button {
+  background: var(--accent);
+  color: var(--white-color);
+
+  background: var(--purple-color);
+  color: var(--dark-blue-color);
+}
 .blank-button:hover,
-.white-button:hover {
+.white-button:hover,
+.blue-button:hover,
+.purple-button:hover {
   background: var(--dark-blue-color);
   color: var(--white-color);
   border-color: var(--dark-blue-color);

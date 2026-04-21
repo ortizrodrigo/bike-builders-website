@@ -172,3 +172,26 @@
     text-align: center;
   }
 }
+
+/* Member Spotlight */
+.ms-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4rem;
+}
+
+.ms-description {
+  text-align: center;
+}
+
+.ms-links {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem 0;
+  gap: 1rem;
+
+  font-size: 0.8rem;
+  font-weight: 500;
+}
