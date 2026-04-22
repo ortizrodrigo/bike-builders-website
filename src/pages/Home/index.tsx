@@ -77,7 +77,8 @@ function HomePage() {
       {/* Member Spotlight */}
       <section className="ms-section white-section">
         <h3 className="ms-title">Member Spotlight</h3>
-        <div className="ms-member-carousel">TODO</div>
+        {/* TODO: Member Component inside Carousel Component*/}
+        <div className="ms-member-carousel">TODO: Member Carousel</div>
         <p className="ms-description">
           We are a team of undergraduate students at UC Berkeley. Everyone plays in integral role in
           building a bike, from organizing the business side of things to making custom components.
@@ -90,6 +91,23 @@ function HomePage() {
           <Link className="purple-button" to={"/contact"}>
             Learn More
           </Link>
+        </div>
+      </section>
+      {/* Projects */}
+      <section className="projects-section">
+        <h2 className="projects-title">Projects</h2>
+        <p className="projects-description">
+          We have a fleet of bike projects under our belt, with more coming soon. Check out what
+          we're working on!
+        </p>
+        {/* TODO: set proper aspect ratio */}
+        <div className="projects-images">
+          {/* TODO: LabeledImage Component */}
+          <img src={placeholder} alt="placeholder 1" className="projects-image projects-image-1" />
+          <img src={placeholder} alt="placeholder 2" className="projects-image projects-image-2" />
+          <img src={placeholder} alt="placeholder 3" className="projects-image projects-image-3" />
+          <img src={placeholder} alt="placeholder 4" className="projects-image projects-image-4" />
+          <img src={placeholder} alt="placeholder 5" className="projects-image projects-image-5" />
         </div>
       </section>
     </div>
