@@ -4,6 +4,8 @@ import DesignBuildLearnSection from "./sections/DesignBuildLearn";
 import WhoWeAreSection from "./sections/WhoWeAre";
 import MemberSpotlightSection from "./sections/MemberSpotlight";
 import ProjectsSection from "./sections/Projects";
+import SponsorsSection from "./sections/Sponsors";
+import NewsletterSection from "./sections/Newsletter";
 
 function HomePage() {
   return (
@@ -25,6 +27,8 @@ function HomePage() {
       <WhoWeAreSection />
       <MemberSpotlightSection />
       <ProjectsSection />
+      <SponsorsSection />
+      <NewsletterSection />
     </div>
   );
 }

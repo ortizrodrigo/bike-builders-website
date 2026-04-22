@@ -1,0 +1,11 @@
+.sponsors-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4rem;
+}
+
+.sponsors-title {
+  color: var(--color-header-on-light);
+}
