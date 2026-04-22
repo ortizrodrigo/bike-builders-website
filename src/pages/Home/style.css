@@ -1,0 +1,29 @@
+.home-page {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.bike-path {
+  position: absolute;
+  top: 50vh;
+  left: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.6;
+}
+.bike-path path {
+  animation: dashMove 2s linear infinite;
+}
+
+@keyframes dashMove {
+  to {
+    stroke-dashoffset: 16;
+  }
+}
+
+@media (max-width: 1023px) {
+  .bike-path {
+    display: none;
+  }
+}
