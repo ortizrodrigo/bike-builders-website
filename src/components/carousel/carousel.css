@@ -1,0 +1,52 @@
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  padding: 32px 0;
+}
+
+/* moving track */
+.carousel-track {
+  display: flex;
+  width: max-content;
+  animation: ticker linear infinite;
+}
+
+/* each duplicated group */
+.carousel-group {
+  display: flex;
+  white-space: nowrap;
+}
+
+/* item wrapper (works for text, images, etc.) */
+.carousel-item {
+  display: inline-flex;
+  align-items: center;
+  font-size: 64px;
+  font-family: "Cal Sans";
+  color: var(--white-color);
+  line-height: 1;
+  position: relative;
+}
+
+/* white dot separator (only when enabled) */
+.carousel-item.with-dot::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: calc(var(--gap) * -0.63); /* scales with gap */
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background: var(--white-color);
+  border-radius: 50%;
+}
+
+/* infinite scroll */
+@keyframes ticker {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
