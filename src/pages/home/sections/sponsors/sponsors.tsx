@@ -1,5 +1,5 @@
-import "@/pages/Home/style.css";
-import "@/pages/Home/sections/Sponsors/style.css";
+import "@/pages/home/home.css";
+import "@/pages/home/sections/sponsors/sponsors.css";
 import { Link } from "react-router";
 
 function SponsorsSection() {

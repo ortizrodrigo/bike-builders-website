@@ -1,5 +1,5 @@
-import "@/pages/Home/style.css";
-import "@/pages/Home/sections/Hero/style.css";
+import "@/pages/home/home.css";
+import "@/pages/home/sections/hero/hero.css";
 import { Link } from "react-router";
 import logo from "@/assets/logo.svg";
 

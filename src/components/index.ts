@@ -1,1 +1,1 @@
-export { default as LabeledImage } from "./LabeledImage/LabeledImage";
+export { default as LabeledImage } from "./labeled-image/labeled-image";

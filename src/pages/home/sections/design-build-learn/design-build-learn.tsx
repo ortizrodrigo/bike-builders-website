@@ -1,5 +1,5 @@
-import "@/pages/Home/style.css";
-import "@/pages/Home/sections/DesignBuildLearn/style.css";
+import "@/pages/home/home.css";
+import "@/pages/home/sections/design-build-learn/design-build-learn.css";
 import dbl_left from "@/assets/home/dbl-left.jpg";
 import dbl_right from "@/assets/home/dbl-right.jpg";
 

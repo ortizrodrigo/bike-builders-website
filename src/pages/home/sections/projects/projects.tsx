@@ -1,5 +1,5 @@
-import "@/pages/Home/style.css";
-import "@/pages/Home/sections/Projects/style.css";
+import "@/pages/home/home.css";
+import "@/pages/home/sections/projects/projects.css";
 import placeholder from "@/assets/placeholder.jpeg";
 import { LabeledImage } from "@/components";
 

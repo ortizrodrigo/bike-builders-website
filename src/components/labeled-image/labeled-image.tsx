@@ -1,4 +1,4 @@
-import "./LabeledImage.css";
+import "./labeled-image.css";
 
 type LabeledImageProps = {
   src: string;

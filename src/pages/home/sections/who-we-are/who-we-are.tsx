@@ -1,5 +1,5 @@
-import "@/pages/Home/style.css";
-import "@/pages/Home/sections/WhoWeAre/style.css";
+import "@/pages/home/home.css";
+import "@/pages/home/sections/who-we-are/who-we-are.css";
 import placeholder from "@/assets/placeholder.jpeg";
 
 function WhoWeAreSection() {

@@ -1,11 +1,14 @@
-import "@/pages/Home/style.css";
-import HeroSection from "./sections/Hero";
-import DesignBuildLearnSection from "./sections/DesignBuildLearn";
-import WhoWeAreSection from "./sections/WhoWeAre";
-import MemberSpotlightSection from "./sections/MemberSpotlight";
-import ProjectsSection from "./sections/Projects";
-import SponsorsSection from "./sections/Sponsors";
-import NewsletterSection from "./sections/Newsletter";
+import "@/pages/home/home.css";
+
+import {
+  HeroSection,
+  DesignBuildLearnSection,
+  WhoWeAreSection,
+  MemberSpotlightSection,
+  ProjectsSection,
+  SponsorsSection,
+  NewsletterSection,
+} from "./sections";
 
 function HomePage() {
   return (

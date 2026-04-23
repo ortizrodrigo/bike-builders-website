@@ -1,5 +1,5 @@
-import "@/pages/Home/style.css";
-import "@/pages/Home/sections/MemberSpotlight/style.css";
+import "@/pages/home/home.css";
+import "@/pages/home/sections/member-spotlight/member-spotlight.css";
 import { Link } from "react-router";
 
 function MemberSpotlightSection() {

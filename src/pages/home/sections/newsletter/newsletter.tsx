@@ -1,5 +1,5 @@
-import "@/pages/Home/style.css";
-import "@/pages/Home/sections/Newsletter/style.css";
+import "@/pages/home/home.css";
+import "@/pages/home/sections/newsletter/newsletter.css";
 import { Link } from "react-router";
 
 function NewsletterSection() {
