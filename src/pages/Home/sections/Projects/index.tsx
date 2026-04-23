@@ -10,7 +10,6 @@ function ProjectsSection() {
         We have a fleet of bike projects under our belt, with more coming soon. Check out what we're
         working on!
       </p>
-      {/* TODO: set proper aspect ratio */}
       <div className="projects-images">
         {/* TODO: LabeledImage Component */}
         <img src={placeholder} alt="placeholder 1" className="projects-image projects-image-1" />
