@@ -1,8 +1,8 @@
 import "@/layout/header/header.css";
-import { useState, useEffect } from "react";
 import logo from "@/assets/logo.svg";
 import NavItem from "@/layout/nav-item/nav-item";
 import { NavLink } from "react-router";
+import { useState, useEffect } from "react";
 
 function Header() {
   const [scrolled, setScrolled] = useState(false);
