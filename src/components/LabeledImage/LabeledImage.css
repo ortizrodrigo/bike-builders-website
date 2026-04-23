@@ -1,0 +1,25 @@
+.labeled-image-container {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.labeled-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.labeled-image-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 1rem 0.6rem;
+  font-size: inherit;
+  font-weight: bold;
+  color: var(--white-color);
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

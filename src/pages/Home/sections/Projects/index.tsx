@@ -1,6 +1,7 @@
 import "@/pages/Home/style.css";
 import "@/pages/Home/sections/Projects/style.css";
 import placeholder from "@/assets/placeholder.jpeg";
+import { LabeledImage } from "@/components";
 
 function ProjectsSection() {
   return (
@@ -11,12 +12,36 @@ function ProjectsSection() {
         working on!
       </p>
       <div className="projects-images">
-        {/* TODO: LabeledImage Component */}
-        <img src={placeholder} alt="placeholder 1" className="projects-image projects-image-1" />
-        <img src={placeholder} alt="placeholder 2" className="projects-image projects-image-2" />
-        <img src={placeholder} alt="placeholder 3" className="projects-image projects-image-3" />
-        <img src={placeholder} alt="placeholder 4" className="projects-image projects-image-4" />
-        <img src={placeholder} alt="placeholder 5" className="projects-image projects-image-5" />
+        <LabeledImage
+          src={placeholder}
+          alt="placeholder 1"
+          label="Team Jersey V2"
+          className="projects-image projects-image-1"
+        />
+        <LabeledImage
+          src={placeholder}
+          alt="placeholder 2"
+          label="Telemetry V1"
+          className="projects-image projects-image-2"
+        />
+        <LabeledImage
+          src={placeholder}
+          alt="placeholder 3"
+          label="Gravel Bike V1"
+          className="projects-image projects-image-3"
+        />
+        <LabeledImage
+          src={placeholder}
+          alt="placeholder 4"
+          label="Mountain Bike V2"
+          className="projects-image projects-image-4"
+        />
+        <LabeledImage
+          src={placeholder}
+          alt="placeholder 5"
+          label="Weilding Jig V3"
+          className="projects-image projects-image-5"
+        />
       </div>
     </section>
   );
