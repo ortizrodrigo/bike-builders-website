@@ -11,7 +11,6 @@ function SponsorsSection() {
       <p className="sponsors-description">
         We are grateful for the people and companies that make our journey possible!
       </p>
-      {/* TODO: sponsor images inside Carousel Component*/}
       <Carousel>
         <img src={placeholder} alt="sponsor" className="sponsors-image" />
         <img src={placeholder} alt="sponsor" className="sponsors-image" />
