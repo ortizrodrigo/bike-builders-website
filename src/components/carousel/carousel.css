@@ -9,22 +9,19 @@
   display: flex;
   width: max-content;
   animation: ticker linear infinite;
+  align-items: center;
 }
 
 /* each duplicated group */
 .carousel-group {
   display: flex;
-  white-space: nowrap;
 }
 
 /* item wrapper (works for text, images, etc.) */
 .carousel-item {
-  display: inline-flex;
+  display: flex;
+  flex-shrink: 0;
   align-items: center;
-  font-size: 64px;
-  font-family: "Cal Sans";
-  color: var(--white-color);
-  line-height: 1;
   position: relative;
 }
 

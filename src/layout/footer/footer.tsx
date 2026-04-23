@@ -7,10 +7,10 @@ function Footer() {
   return (
     <footer>
       <Carousel withDot>
-        <>STAY IN THE LOOP</>
-        <>STAY IN THE LOOP</>
-        <>STAY IN THE LOOP</>
-        <>STAY IN THE LOOP</>
+        <p className="footer-carousel-text">STAY IN THE LOOP</p>
+        <p className="footer-carousel-text">STAY IN THE LOOP</p>
+        <p className="footer-carousel-text">STAY IN THE LOOP</p>
+        <p className="footer-carousel-text">STAY IN THE LOOP</p>
       </Carousel>
       <div className="footer-links">
         <div className="column">

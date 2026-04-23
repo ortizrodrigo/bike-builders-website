@@ -43,3 +43,10 @@ footer {
 .footer-name {
   line-height: 1;
 }
+
+.footer-carousel-text {
+  color: var(--white-color);
+  font-family: "Cal Sans";
+  font-size: 64px;
+  line-height: 1;
+}
