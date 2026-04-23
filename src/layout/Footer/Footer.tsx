@@ -1,4 +1,4 @@
-import "@/layout/Footer/Footer.css";
+import "@/layout/footer/footer.css";
 import { Link } from "react-router";
 import logo from "@/assets/logo.svg";
 

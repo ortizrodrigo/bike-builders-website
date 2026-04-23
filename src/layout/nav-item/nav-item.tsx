@@ -1,4 +1,4 @@
-import "./NavItem.css";
+import "@/layout/nav-item/nav-item.css"
 import { NavLink } from "react-router";
 
 interface NavItemProps {

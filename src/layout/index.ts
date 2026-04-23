@@ -1,2 +1,2 @@
-export { default as Header } from "@/layout/Header/Header";
-export { default as Footer } from "@/layout/Footer/Footer";
+export { default as Header } from "@/layout/header/header";
+export { default as Footer } from "@/layout/footer/footer";
