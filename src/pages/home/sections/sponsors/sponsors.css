@@ -9,3 +9,7 @@
 .sponsors-title {
   color: var(--color-header-on-light);
 }
+
+.sponsors-image {
+  max-height: 200px;
+}

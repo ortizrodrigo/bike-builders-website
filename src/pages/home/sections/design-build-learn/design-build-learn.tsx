@@ -1,7 +1,6 @@
 import "@/pages/home/home.css";
 import "@/pages/home/sections/design-build-learn/design-build-learn.css";
-import dbl_left from "@/assets/home/dbl-left.jpg";
-import dbl_right from "@/assets/home/dbl-right.jpg";
+import { dblleft, dblright } from "@/assets/home";
 
 function DesignBuildLearnSection() {
   return (
@@ -12,8 +11,8 @@ function DesignBuildLearnSection() {
         Lorem ipsum dolor sit amet consectetur.
       </p>
       <div className="dbl-images">
-        <img src={dbl_left} alt="" className="dbl-image" />
-        <img src={dbl_right} alt="" className="dbl-image" />
+        <img src={dblleft} alt="" className="dbl-image" />
+        <img src={dblright} alt="" className="dbl-image" />
       </div>
     </section>
   );

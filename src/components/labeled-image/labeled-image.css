@@ -4,6 +4,13 @@
   overflow: hidden;
   line-height: 0;
 }
+.labeled-image-container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+}
 
 .labeled-image {
   width: 100%;
@@ -19,6 +26,7 @@
   font-size: inherit;
   font-weight: bold;
   color: var(--white-color);
+  z-index: 1;
 
   white-space: nowrap;
   text-overflow: ellipsis;
